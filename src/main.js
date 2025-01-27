@@ -1,6 +1,6 @@
 // Loading packages
-const { ForgeClient } = require("@tryforge/forgescript");const { ForgeDB } = require("@tryforge/forge.db")
-   
+const dotenv = require("dotenv");dotenv.config();const { ForgeClient } = require("@tryforge/forgescript");const { ForgeDB } = require("@tryforge/forge.db");const { ForgeQuirks } = require("forge.quirks")
+
 // Client initialization
 const client = new ForgeClient({
   
