@@ -21,7 +21,7 @@ const client = new ForgeClient({
     "DirectMessages",
     //"DirectMessageReactions",
     //"DirectMessageTyping",
-    "MessageContent",
+    "MessageContent"
     //"GuildScheduledEvents",
     //"AutoModerationConfiguration",
     //"AutoModerationExecution"
