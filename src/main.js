@@ -110,4 +110,4 @@ const client = new ForgeClient({
 client.commands.load("commands/legacy");client.applicationCommands.load("commands/application")
    
 // Your bot token
-   client.login(process.env.TOKEN);
+client.login(process.env.TOKEN);
