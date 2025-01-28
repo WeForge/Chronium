@@ -52,7 +52,7 @@ while true; do
             ;;
         2)
             FORGE_VERSION="github:tryforge/forgescript#dev"
-            FORGEDB_VERSION="github:tryforge/forgedb#dev"
+            FORGEDB_VERSION="github:tryforge/forgedb"
             break
             ;;
         *)
@@ -63,9 +63,7 @@ done
 
 # installing deps
 echo -e "${BLUE}$(timestamp) :: Installing dependencies...${RESET}"
-npm i $FORGE_VERSION
-npm i $FORGEDB_VERSION
-npm i sqlite3
+npm i $FORGE_VERSION $FORGEDB_VERSION sqlite3 github:tryforge/forgeapi github:LynnuxDev/forge.quirks
 echo -e "${BLUE}$(timestamp) :: Finishing up...${RESET}"
 npm cache clean --force
 echo -e "${GREEN}$(timestamp) :: Successfully installed all the dependencies!${RESET}"
@@ -77,10 +75,11 @@ echo -e "${YELLOW}Info: currently you can only have one prefix!${RESET}"
 # creating config file with proper JSON format
 read -p "App Token: " -e A
 read -p "App Prefix: " -e B
-
+read -p "Port to connect: " -e C
 cat > src/.env << EOF
 TOKEN=${A}
 PREFIX=${B}
+PORT=${C}
 EOF
 
 echo -e "\n${GREEN}$(timestamp) :: Successfully set up configuration file.${RESET}"
