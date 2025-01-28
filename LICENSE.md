@@ -29,17 +29,17 @@ The exercise of the licenses granted in Section 1 is expressly conditioned upon 
 
     b. **License and Credits for Private Use:** For any private, non-commercial use of the Work or derivative works:
 
-        *  Licensee must include a complete and unmodified copy of this WeForge License v1 document with every instance of the Work or derivative work.
+        *  Licensee can include a complete and unmodified copy of this WeForge License v1 document with every instance of the Work or derivative work.
         *  Licensee shall not remove or obscure any original copyright notices, attribution statements, or credit information contained within the Work.
 
     c. **Distribution Requirements:** For any distribution of the Work, whether in original or modified form:
 
-        *  Licensee must include a complete and unmodified copy of this WeForge License v1 document with every distribution.
+        *  Licensee should try to include a complete and unmodified copy of this WeForge License v1 document with every distribution.
         *  Licensee shall not remove or obscure any original copyright notices, attribution statements, or credit information contained within the Work.
 
     d. **Modification Requirements:** For any modifications of the Work:
 
-        *  Licensee must include a complete and unmodified copy of this WeForge License v1 document with any modified Work.
+        *  Licensee can include a complete and unmodified copy of this WeForge License v1 document with any modified Work.
         *  Licensee shall not remove or obscure any original copyright notices, attribution statements, or credit information contained within the Work.
 
 **3. Disclaimer of Warranty:**
@@ -56,7 +56,7 @@ This License is perpetual, meaning it lasts forever, unless terminated. Licensor
 
 **6. General:**
 
-This License constitutes the entire agreement between Licensor and Licensee concerning the Work and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between the parties. This License shall be governed by and construed in accordance with the laws of [Insert Jurisdiction - e.g., Your State/Country], without regard to its conflict of law provisions.
+This License constitutes the entire agreement between Licensor and Licensee concerning the Work and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between the parties. This License shall be governed by and construed in accordance with the laws of the Republican of Philippines, without regard to its conflict of law provisions.
 
 **Copyright (c) 2025 WeForge**
 
