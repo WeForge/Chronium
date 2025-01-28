@@ -1,5 +1,8 @@
 // Loading packages
-const dotenv = require("dotenv");dotenv.config();const { ForgeClient } = require("@tryforge/forgescript");const { ForgeDB } = require("@tryforge/forge.db");const { ForgeQuirks } = require("forge.quirks")
+const dotenv = require("dotenv");dotenv.config();const { ForgeClient } = require("@tryforge/forgescript");const { ForgeDB } = require("@tryforge/forge.db");const { ForgeQuirks } = require("forge.quirks");const { ForgeAPI } = require("@tryforge/forge.api");
+
+// Extension shenanigans
+const api = new ForgeAPI({port: process.env.PORT,auth: { type: 0 }});
 
 // Client initialization
 const client = new ForgeClient({
@@ -104,10 +107,10 @@ const client = new ForgeClient({
     ],
   
   //Extensions
-  "extensions": [new ForgeDB()]})
+  "extensions": [new ForgeDB(),api,new ForgeQuirks(),new ForgeRegex()]})
    
-// Load the commands
-client.commands.load("commands/legacy");client.applicationCommands.load("commands/application")
+// Load stuff
+const functions = require("./functions");functions.forEach((func) => client.functions.add(func));api.router.load("api");client.commands.load("commands/legacy");client.applicationCommands.load("commands/application")
    
 // Your bot token
 client.login(process.env.TOKEN);
