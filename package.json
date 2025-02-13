@@ -1,0 +1,61 @@
+{
+  "name": "chronium",
+  "version": "0.0.0",
+  "description": "its a bot.... what else do you need?",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "up": "npm install && npm update",
+    "start": "clear && npm run lint && npm run format && clear && node ./src/index.js",
+    "stop": "echo 'No process manager used, so stop command is redundant'",
+    "restart": "npm run stop && npm run start",
+    "lint": "eslint --fix '**/*.{js,mjs,cjs,ts}'",
+    "format": "prettier --write '**/*.{js,mjs,cjs,ts,json,css,html}'",
+    "lint-and-format": "pnpm run lint && pnpm run format",
+    "stable-release": "git switch stable && git merge dev --no-ff -m 'Pulled All Changes From Dev Branch. See Detailed Update List In Discord Server'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiko-Labs/Kiko-San.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "opensource",
+    "forgescript",
+    "bdfd",
+    "premade",
+    "balls"
+  ],
+  "author": "WeForge",
+  "license": "WeForge v1",
+  "bugs": {
+    "url": "https://github.com/weforge/chronium/issues"
+  },
+  "homepage": "https://github.com/weforge/chronium/#readme",
+  "dependencies": {
+    "@tryforge/forge.canvas": "^1.1.1",
+    "@tryforge/forge.db": "^2.0.7",
+    "@tryforge/forgescript": "github:tryforge/forgescript#dev",
+    "async-retry": "^1.3.3",
+    "balls": "^1.0.1",
+    "chalk": "^4.1.2",
+    "figlet": "^1.8.0",
+    "forge.quirks": "github:LynnuxDev/forge.quirks",
+    "owoify-js": "^2.0.0",
+    "path": "^0.12.7",
+    "progress": "^2.0.3",
+    "sqlite3": "^5.1.7",
+    "ssh2-sftp-client": "^11.0.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.18.2"
+  }
+}
